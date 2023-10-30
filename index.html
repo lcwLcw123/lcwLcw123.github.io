@@ -93,8 +93,8 @@
         <p class="w3-center">
           <a href="mailto:e1011116@u.nus.edu">Email</a> &nbsp/&nbsp
           <a href="https://scholar.google.com.hk/citations?hl=zh-CN&authuser=1&user=XzYtb7QAAAAJ">Google Scholar</a>&nbsp/&nbsp
-          <a href="data\CV_noisp.pdf">CV</a>&nbsp/&nbsp
-          <a href="data\transcript_LCW.pdf">Transcripts</a>  
+          <a href="data\CV.pdf">CV</a>&nbsp/&nbsp
+          <a href="data\transcript(1)">Transcripts</a>  
         </p>
         </tbody></table>
   </div>
@@ -102,6 +102,7 @@
   <div class="w3-container w3-light-grey w3-padding-32" id="news">
    <h2>News</h2>
       <p><li> <a style="color:red">07/2023, I am currently seeking suitable PhD and internship positions. If there are any appropriate opportunities, please feel free to drop me an email. I would greatly appreciate it! </a>.</li></p>
+      <p><li> 10/2023, Discover how to restore document images under various degradation conditions and transform them into a PDF-like quality. See our newest paper for more insights. <a href="https://arxiv.org/abs/2310.17910">DocStormer: Revitalizing Multi-Degraded Colored Document Images to Pristine PDF</a></li></p>
       <p><li> 05/2023, Our team NUS-LV Bokeh attend  <a href="https://codalab.lisn.upsaclay.fr/competitions/10229"> NTIRE 2023 Bokeh Effect Transformation Challenge</a></a>, and we are proud to announce that we secured  <strong>third place</strong>.</a></li></p>
       <p><li> 04/2023, Customize your chatgpt for code tasks is now possible, see our newest paper <a href="https://arxiv.org/abs/2303.03012">the Feasibility of Specialized Ability Stealing for Large Language Code Models</a></a>.</li></p>
 
@@ -110,6 +111,28 @@
 <!-- The Projects Section -->
   <div class="w3-container w3-padding-32" id="projects">
     <h2>Recent Projects</h2>
+
+  <h4><li>DocStormer: Revitalizing Multi-Degraded Colored Document Images to Pristine PDF</li></h4>
+  <p class="w3-justify">
+    For capturing colored document images, e.g. posters and magazines, it is common that multiple degradations such as shadows, wrinkles, etc., are simultaneously introduced due to external factors. Restoring multi-degraded
+colored document images is a great challenge, yet overlooked, as most existing algorithms focus on enhancing
+color ignored document images via binarization. Thus, we propose DocStormer, a novel algorithm designed to re
+store multi-degraded colored documents to their potential pristine PDF. The contributions are: firstly, we propose a
+“Perceive-then-Restore” paradigm with a reinforced transformer block, which more effectively encodes and utilizes
+the distribution of degradations. Secondly, we are the first to utilize GAN and pristine PDF magazine images to nar
+row the distribution gap between the enhanced results and PDF images, in pursuit of less degradation and better vi
+sual quality. Thirdly, we propose a non-parametric strategy, PFILI, which enables a smaller training scale and larger
+testing resolutions with acceptable detail trade off, while saving memory and inference time. Fourthly, we are the first
+to propose a novel Multi-Degraded Colored Document image Enhancing dataset, named MD-CDE, for both training
+and evaluation. Experimental results show that the DocStormer exhibits superior performance, capable of revital
+izing multi-degraded colored documents into their potential pristine digital versions, which fills the current academic
+gap from the perspective of method, data, and task.
+  </p>
+        <img style="width:80%;" src="images\Docstormer_overview.jpg"> 
+        <p class="w3-justify">
+        <a style="color: #447ec9" href="https://arxiv.org/abs/2310.17910">Paper</a>
+        </p>
+  </div>
 	
 	<h4><li>CBTNet:a controllable bokeh transformation model</li></h4>
   <p class="w3-justify">
@@ -137,15 +160,16 @@
 
     <ol>
      
-      <!--
+      
       <p>
-      <li><strong>Title</strong>
+      <li><strong>DocStormer: Revitalizing Multi-Degraded Colored Document Images to Pristine PDF</strong>
       <br>
-      Author, <strong>Yunhe Wang</strong>
+      <strong>Chaowei Liu</strong>, Jichun Li, Yihua Teng, Chaoqun Wang, Nuo Xu, Jihao Wu, Dandan Tu
       <br>
-      <em>NeurIPS</em> 2021 | <a style="color: #447ec9" href="paper link">paper</a> | <a style="color: #447ec9" href="https://github.com/">code</a> | <span style="color:red">Oral Presentation</span> 
+      <em>Arixv </em>| <a style="color: #447ec9" href="https://arxiv.org/abs/2310.17910">paper</a>
+      <!-- <a style="color: #447ec9" href="https://github.com/">code</a> | <span style="color:red">Oral Presentation</span>  -->
       </p>
-      -->
+     
       <p>
 
       <li><strong>On the Feasibility of Specialized Ability Extracting for Large Language Code Models</strong>
@@ -155,6 +179,7 @@
       <em>ICSE</em> 2024  <strong>CCF-A</strong>| <a style="color: #447ec9" href="https://arxiv.org/abs/2303.03012">paper</a>
 
       </ol>
+      
     <h4> Challenge Reports:</h4>
 
       <ol>
@@ -215,6 +240,7 @@
   <!-- </div> -->
 
   <!-- End page content -->
+  <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=CCI1G88YZZEM5tUtj84-t7BBeDwcUXvumDdAjMPGoTg&cl=ffffff&w=a"></script>
 </div>
 
 <script>
@@ -246,3 +272,5 @@ function w3_close() {
 
 </body>
 </html>
+
+

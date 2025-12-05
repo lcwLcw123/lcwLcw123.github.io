@@ -46,6 +46,16 @@
             text-align: center;
         }
 
+        .profile-photo-link {
+            display: inline-block;
+            border-radius: 50%;
+        }
+
+        .profile-photo-link:focus-visible {
+            outline: 2px solid #fff;
+            outline-offset: 6px;
+        }
+
         .profile-photo {
             width: 200px;
             height: 200px;
@@ -245,7 +255,9 @@
 
     <div class="container">
         <header>
-            <img src="images/Lcw_image.png" alt="Chaowei Liu" class="profile-photo">
+            <a href="ad.html" class="profile-photo-link" aria-label="打开 AI 时代 AdSense 招募页">
+                <img src="images/Lcw_image.png" alt="Chaowei Liu" class="profile-photo">
+            </a>
             <h1>Chaowei Liu</h1>
             <p class="title">Master Student at National University of Singapore</p>
             <div class="links">

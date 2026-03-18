@@ -55,6 +55,22 @@
                 border: 1px solid #334155;
             }
         }
+        .watermark {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.15);
+            font-weight: bold;
+            z-index: 1000;
+            pointer-events: none;
+            user-select: none;
+        }
+        @media print {
+            .watermark {
+                display: none !important;
+            }
+        }
     </style>
 </head>
 <body class="min-h-screen p-4 md:p-8 bg-slate-900 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-800 via-slate-900 to-black">
@@ -231,5 +247,6 @@
             </div>
         </footer>
     </div>
+    <div class="watermark">美团liuchaowei03</div>
 </body>
 </html>

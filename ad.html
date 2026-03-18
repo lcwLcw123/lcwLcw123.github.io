@@ -252,11 +252,12 @@
         (function() {
             const text = '美团liuchaowei03';
             const wm = document.querySelector('.watermark');
-            for (let y = -50; y < window.innerHeight + 50; y += 60) {
-                for (let x = -50; x < window.innerWidth + 50; x += 280) {
+            // 斜向排列，增大间距减少数量
+            for (let y = -50; y < window.innerHeight + 50; y += 120) {
+                for (let x = -50; x < window.innerWidth + 50; x += 400) {
                     const span = document.createElement('span');
                     span.textContent = text;
-                    span.style.cssText = `position:absolute;left:${x}px;top:${y}px;font-size:14px;color:rgba(255,255,255,0.6);font-weight:bold;white-space:nowrap;`;
+                    span.style.cssText = `position:absolute;left:${x}px;top:${y}px;font-size:14px;color:rgba(255,255,255,0.15);font-weight:bold;white-space:nowrap;transform:rotate(-30deg);`;
                     wm.appendChild(span);
                 }
             }
